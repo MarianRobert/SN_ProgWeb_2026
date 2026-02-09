@@ -1,22 +1,26 @@
 html {
-	background-color:rgb(111,111,111);
+	background-color: #121212;
 	width:100%;
-	font-size:14px
+	font-size:14px;
+	color: #e0e0e0;
 	
 }
 
 h1 { 
 	font-size:3rem;
 	text-align:center;
+	color: #ffffff;
 
 }
 
 h2 { 
 	font-size:2rem;
+	color: #cccccc;
 }
 
 h3 { 
 	font-size:1.5rem;
+	color: #aaaaaa;
 }
 
 div.entete {
@@ -31,9 +35,9 @@ div.aboutme {
 
 #page { 
 	width:80%;
-	background-color:rgb(211,211,211);
+	background-color: #1e1e1e;
 	margin:auto;
-	border: 2px solid black;
+	border: 2px solid #333;
 	}
 
 tbody { 
@@ -43,7 +47,14 @@ tbody {
 footer { 
 	text-align:center;
 	margin:20px 530px 20px;
-	border: 5px solid blue;
+	border: 2px solid #444;
+	background-color: #181818;
+	color: #bbbbbb;
 	
 }
+
+p, li, td {
+	color: #e0e0e0;
+}
+
 
