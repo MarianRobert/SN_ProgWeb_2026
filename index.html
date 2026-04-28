@@ -4,9 +4,11 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" href="assets/css/style.css" >
+			<script src="assets/js/main.js"></script>			
 		</head>
 	<div id=page>
 		<body>
+		
 			<h1>Projet de Marian Robert et Cheikh Hussein Konaté</h1>
 			
 			<div class=entete>
@@ -64,10 +66,64 @@
 					<li><i>La Chanson de Roland</i>, Anonymes, éditions Flammarion</li>
 				</ul>
 			</div>
+			<div id="container">
+            <h1 style="text-align:center;">Analyse des <span style="color:green">données</span> dans un fichier</h1>
 
+            <div id="page-wrapper">
+                <div>
+                    <span>
+                        <label for="fileInput" class="btn"><small>Sélectionner un fichier au format .txt
+                                :</small></label>
+                        <input id="fileInput" type="file" accept="text/plain" name="Fichier (.txt)" />
+                    </span>
+                </div>
+                <br />
+                <p style="text-align:center;">
+                    <small>
+                        <label for="delimID" class="mylabel">Délimiteur(s)</label>
+                        &nbsp;
+                        <input type="text" value=" ,;’'~|&#@=`-.?!%*$()[]{}_:+«»§\/" name="delim" id="delimID" size="40" />
+                    </small>
+                    <br />
+                    <small>
+                        <label for="poleID" class="mylabel">Pôle</label>
+                        &nbsp;
+                        <input type="text" placeholder="entrez un pôle..." name="pole" id="poleID" size="20" />
+                    </small>
+                    &nbsp;
+                    <small>
+                        <label for="lgID" class="mylabel">Longueur</label>
+                        &nbsp;
+                        <input type="text" value="10" name="lg" id="lgID" size="10" />
+                    </small>
+                    <br />
+                    <br />
+                    <button onclick="alert('bonjour');"><span>Bonjour</span></button>
+                    <br />
+                    <br />
+                    <button class="submit" onclick="segText()"><span>Segmentation</span></button>
+                    <button class="submit" onclick="afficherKujuj()"><span>Kujuj</span></button> 
+                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 3</span></button>
+                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 4</span></button>
+                    <button class="submit" onclick="alert('Je ne fais rien, changez-moi !')"><span>action 5</span></button>
+			<p id="resultat"></p>
+			<p id="logger3"></p>
+                </p>
+            </div>
+            <div id="logger" style="width:100%"></div>
+            <br />
+            <div id="Global">
+                <div id="fileDisplayArea"></div>
+                <div id="page-analysis"></div>
+            </div>
+        </div>
+        </div>
+			
+			
 			<footer>
 			  <p><a href="http://www.univ-paris3.fr/">Lien vers le site de la Sorbonne Nouvelle</a></p>
 			</footer>
+		<script src="assets/js/main.js"></script>
 		</body>
 	</div>
 </html>
